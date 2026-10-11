@@ -116,7 +116,7 @@ def analytics(request: AnalyticsRequest):
                 ),
             }
 
-        return results
+        return {"regions": results}
 
     except HTTPException:
         raise
